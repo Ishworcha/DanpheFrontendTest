@@ -1,233 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              pink: "#F2A5A3",
-              lightgreen: "#89E0CD",
-              purple: "#C058CB",
-              lightblue: "#5844E2",
-              darkpurple: "#70356F",
-              brown: "#622926",
-              blue: "#282974",
-              darkblue: "#141B49",
-              green: "#1A3413",
-              darkbrown: "#2C1E1D",
-              darkgreen: "#0C170C",
-              black: "#000000",
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pink: "#F2A5A3",
+                        lightgreen: "#89E0CD",
+                        purple: "#C058CB",
+                        lightblue: "#5844E2",
+                        darkpurple: "#70356F",
+                        brown: "#622926",
+                        blue: "#282974",
+                        darkblue: "#141B49",
+                        green: "#1A3413",
+                        darkbrown: "#2C1E1D",
+                        darkgreen: "#0C170C",
+                        black: "#000000",
+                    },
+                },
             },
-          },
-        },
-      };
+        };
     </script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Danphe Frontend Screening</title>
-  </head>
-  <body>
-    <header class="py-4">
-      <div class="container mx-auto">
-        <div class="flex justify-between items-center">
-          <div class="logo">
-            <img src="./assets/images/logo.png" />
-          </div>
-          <div class="nav_bar">
-            <ul class="flex items-center">
-              <li><a href="#">Task 1</a></li>
-              <li><a href="#">Task 1</a></li>
-              <li><a href="#">Task 1</a></li>
-              <li><a href="#">Task 1</a></li>
-              <li><a href="#">Task 1</a></li>
-            </ul>
-          </div>
-          <div class="socialsite"></div>
-        </div>
-      </div>
-    </header>
-    <section class="sectionOne">
-      <div class="container mx-auto">
-        <h1>Task One</h1>
-        <div class="taskOneSection p-16">
-          <div class="taskOneSection__taskOne">
-            <div class="taskOneSection__taskOne__redCircle">
-              <div class="taskOneSection__taskOne__redCircle__coneSection">
-                <div
-                  class="taskOneSection__taskOne__redCircle__coneSection__cone"
-                >
-                  <div
-                    class="taskOneSection__taskOne__redCircle__coneSection__cone__circle"
-                  ></div>
-                  <div
-                    class="taskOneSection__taskOne__redCircle__coneSection__cone__triangle"
-                  ></div>
+</head>
+
+<body>
+    <header class="py-8">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" />
                 </div>
-              </div>
+                <div class="nav_bar">
+                    <ul class="flex items-center">
+                        <li><a href="#">Task 1</a></li>
+                        <li><a href="#">Task 2</a></li>
+                        <li><a href="#">Task 3</a></li>
+                        <li><a href="#">Task 4</a></li>
+                        <li><a href="#">Task 5</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <div><a href="#" class="px-2"><i class="fa-brands fa-behance"></i></a></div>
+                    <div><a href="#" class="px-2"><i class="fa-brands fa-dribbble"></i></i></a></div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </header>
+    <div class="bg-gray-100 py-8">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl font-bold">Frontend Screening</h3>
+                <div>
+                    <ul class="flex items-center">
+                        <li class="px-1 text-xs"><a href="#">Home</a></li>
+                        <li class="px-1 text-xs">/</li>
+                        <li class="px-1 text-xs"><a href="#">Frontend Screening</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="sectionOne">
+        <div class="container mx-auto">
+            <h1 class="sectionTitle">Task One</h1>
+            <div class="taskOneSection p-16">
+                <div class="taskOneSection__taskOne">
+                    <div class="taskOneSection__taskOne__redCircle">
+                        <div class="taskOneSection__taskOne__redCircle__coneSection">
+                            <div class="taskOneSection__taskOne__redCircle__coneSection__cone">
+                                <div class="taskOneSection__taskOne__redCircle__coneSection__cone__circle"></div>
+                                <div class="taskOneSection__taskOne__redCircle__coneSection__cone__triangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End of Task One -->
 
-    <section class="sectionTwo mt-16">
-      <div class="container mx-auto">
-        <h1>Task Two</h1>
-        <div class="bg-gray-100 p-8">
-          <div class="bg-white grid grid-cols-4 taskTwo boxes">
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-pink"></div>
+    <section class="sectionTwo">
+        <div class="container mx-auto">
+            <h1 class="sectionTitle">Task Two</h1>
+            <div class="bg-gray-100 p-8">
+                <div class="bg-white grid grid-cols-4 taskTwo boxes">
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-pink"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-lightgreen"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-purple"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-lightblue"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-darkpurple"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-brown"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-blue"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-darkblue"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-green"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-darkbrown"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-darkgreen"></div>
+                    </div>
+                    <div class="box p-4 bg-white">
+                        <div class="box1 w-full h-full bg-black"></div>
+                    </div>
+                </div>
             </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-lightgreen"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-purple"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-lightblue"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-darkpurple"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-brown"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-blue"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-darkblue"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-green"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-darkbrown"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-darkgreen"></div>
-            </div>
-            <div class="box p-4 bg-white">
-              <div class="box1 w-full h-full bg-black"></div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- End of Task 2 -->
 
-    <section class="sectionThree mt-16">
-      <div class="container mx-auto">
-        <h1>Task Three</h1>
+    <section class="sectionThree">
+        <div class="container mx-auto">
+            <h1 class="sectionTitle">Task Three</h1>
 
-        <div class="taskThreeSection">
-          <table>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="taskThreeSection">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>
+                                Lorem ipsum dolor sit amet consectetuer, adipiscing elit.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
     </section>
-  </body>
+
+    <section class="sectionFour">
+        <div class="container mx-auto">
+            <h1 class="sectionTitle">Task Four</h1>
+
+            <div class="taskFourSection">
+                <div class="balls">
+
+
+                    <div class="ball ball1 mb-16">
+
+                    </div>
+                    <div class="ball ball2">
+
+                    </div>
+                    <div class="ball ball3">
+
+                    </div>
+                    <div class="ball ball4">
+
+                    </div>
+                    <div class="bouncing_ball">
+                        <div class="ballmain"></div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <section class="sectionFour mb-16">
+        <div class="container mx-auto">
+            <h1 class="sectionTitle">Task Five</h1>
+
+            <div class="taskFiveSection">
+                <div class="rectangleFive">
+                    <div class="small_rectangles rectangleTop">
+
+                    </div>
+                    <div class="small_rectangles rectangleLeft">
+
+                    </div>
+                    <div class="small_rectangles rectangleBottom">
+
+                    </div>
+                    <div class="small_rectangles rectangleRight">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="assets/js/gsapanimation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

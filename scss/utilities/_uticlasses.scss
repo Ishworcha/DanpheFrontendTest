@@ -1,3 +1,10 @@
+.sectionTitle {
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .taskOneSection {
   display: flex;
   justify-content: center;
@@ -83,4 +90,75 @@
 
 .taskThreeSection table tr td:first-child {
   color: #000000;
+}
+
+.taskFourSection .balls,
+.bouncing_ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.taskFourSection .balls {
+  position: relative;
+  border-bottom: 2px solid #000000;
+}
+
+.bouncing_ball {
+  position: absolute;
+  bottom: 0;
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f2f1f1;
+}
+
+.ballmain {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $primary;
+  transform: translateY(-250px);
+}
+
+.rectangleFive {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+}
+
+.small_rectangles {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #efefef;
+}
+
+.rectangleTop {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.rectangleRight {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rectangleBottom {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.rectangleLeft {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }

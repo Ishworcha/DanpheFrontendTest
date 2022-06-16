@@ -1,12 +1,15 @@
-*, ::after, ::before{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a, li{
-    list-style: none;
-    text-decoration: none;
+a,
+li {
+  list-style: none;
+  text-decoration: none;
 }
 
 h1,
@@ -57,4 +60,8 @@ h5,
 h6,
 .h6 {
   font-size: 1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
