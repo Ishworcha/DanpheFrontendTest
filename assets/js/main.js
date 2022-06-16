@@ -1,10 +1,3 @@
-window.scrollTo(0, 0);
-
-$(".small_rectangles").click(function (e) {
-  e.preventDefault();
-  $(this).addClass("active").siblings().removeClass("active");
-});
-
 // onepage scrolling
 
 var sections = $("section"),
@@ -49,13 +42,28 @@ nav.find("#desktop-nav ul li a").on("click", function () {
 (function ($) {
   $(function () {
     //  open and close nav
-    $("#navbar-toggle").click(function () {
+    $("#navbar-toggle, .nav_bar ul li a").click(function () {
       $(".nav_bar ul").slideToggle();
+    });
+
+    $(".nav_bar ul li a").click(function () {
+      $(".nav_bar ul").hide();
     });
 
     // Hamburger toggle
     $("#navbar-toggle").on("click", function () {
       this.classList.toggle("active");
     });
+
+    $(".nav_bar ul li a").click(function () {
+      $("#navbar-toggle").removeClass("active");
+    });
   });
 })(jQuery);
+
+// task 5 Rectangle Animation
+
+$(".small_rectangles").click(function (e) {
+  e.preventDefault();
+  $(this).addClass("active").siblings().removeClass("active");
+});
