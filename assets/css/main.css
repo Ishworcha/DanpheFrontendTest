@@ -60,7 +60,20 @@ h6,
   font-size: 1rem;
 }
 
-.taskOne {
+.taskOneSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E5E5E5;
+}
+
+.taskOneSection__taskOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,10 +85,10 @@ h6,
           align-items: center;
   width: 500px;
   height: 300px;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
 }
 
-.taskOne__redCircle {
+.taskOneSection__taskOne__redCircle {
   position: relative;
   background-color: #EA3223;
   border-radius: 50%;
@@ -83,7 +96,7 @@ h6,
   height: 100px;
 }
 
-.taskOne__redCircle__coneSection {
+.taskOneSection__taskOne__redCircle__coneSection {
   position: absolute;
   left: 50%;
   bottom: -20px;
@@ -91,16 +104,53 @@ h6,
           transform: translateX(-50%);
 }
 
-.taskOne__redCircle__coneSection__cone__triangle {
+.taskOneSection__taskOne__redCircle__coneSection__cone__triangle {
   height: 0;
   border: 20px solid transparent;
   border-top: 20px solid #ffffff;
 }
 
-.taskOne__redCircle__coneSection__cone__circle {
+.taskOneSection__taskOne__redCircle__coneSection__cone__circle {
   width: 40px;
   height: 40px;
   background: #ffffff;
   border-radius: 50%;
+}
+
+.box {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #999999;
+}
+
+.taskThreeSection {
+  display: inline-block;
+  border-top: 10px solid #000000;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.taskThreeSection table tr:nth-child(odd) {
+  background-color: #EA3223;
+  color: #ffffff;
+}
+
+.taskThreeSection table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.taskThreeSection table tr:nth-child(4n) {
+  background-color: green;
+  color: #ffffff;
+}
+
+.taskThreeSection table tr td {
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.taskThreeSection table tr td:first-child {
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
