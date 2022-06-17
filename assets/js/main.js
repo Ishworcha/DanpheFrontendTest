@@ -62,10 +62,3 @@ $(function () {
     $("#navbar-toggle").removeClass("active");
   });
 });
-
-// task 5 Rectangle Animation
-
-// $(".small_rectangles").click(function (e) {
-//   e.preventDefault();
-//   $(this).addClass("active").siblings().removeClass("active");
-// });

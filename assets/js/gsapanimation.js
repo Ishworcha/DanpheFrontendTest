@@ -1,3 +1,5 @@
+// task 4
+
 var ball = document.querySelector(".ballmain");
 
 var ease = Circ.easeIn;
@@ -20,6 +22,8 @@ tl.add("start")
     },
     "-=.05"
   );
+
+// task 5
 
 var rectangleTop = document.querySelector(".rectangleTop");
 var rectangleRight = document.querySelector(".rectangleRight");
