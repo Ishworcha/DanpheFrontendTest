@@ -201,6 +201,10 @@ body {
   border: 1px solid #999999;
 }
 
+.emptybox {
+  border: 16px solid #ffffff;
+}
+
 .taskThreeSection {
   display: inline-block;
   border-top: 10px solid #000000;
@@ -292,7 +296,9 @@ body {
   transition: all linear 0.4s;
 }
 
-.small_rectangles.active {
+.small_rectangles .boxTest {
+  width: 60px;
+  height: 60px;
   background-color: #377d22;
 }
 

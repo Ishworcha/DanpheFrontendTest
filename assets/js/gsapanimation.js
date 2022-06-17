@@ -20,3 +20,40 @@ tl.add("start")
     },
     "-=.05"
   );
+
+var rectangleTop = document.querySelector(".rectangleTop");
+var rectangleRight = document.querySelector(".rectangleRight");
+var rectangleBottom = document.querySelector(".rectangleBottom");
+var rectangleLeft = document.querySelector(".rectangleLeft");
+var box = document.querySelector(".boxTest");
+
+rectangleTop.addEventListener("click", changeTeam);
+rectangleRight.addEventListener("click", changeTeam);
+rectangleBottom.addEventListener("click", changeTeam);
+rectangleLeft.addEventListener("click", changeTeam);
+
+function changeTeam() {
+  var rect = box.getBoundingClientRect();
+  var classes = this.classList;
+  this.appendChild(box);
+
+  TweenMax.set(box, { x: 0, y: 0 });
+
+  if (classes.contains("rectangleTop")) {
+    TweenMax.to(box, 1, { backgroundColor: "#377d22" });
+  } else if (classes.contains("rectangleRight")) {
+    TweenMax.to(box, 1, { backgroundColor: "#377d22" });
+  } else if (classes.contains("rectangleBottom")) {
+    TweenMax.to(box, 1, { backgroundColor: "#377d22" });
+  } else if (classes.contains("rectangleLeft")) {
+    TweenMax.to(box, 1, { backgroundColor: "#377d22" });
+  }
+
+  var newRect = box.getBoundingClientRect();
+
+  TweenMax.from(box, 1, {
+    x: rect.left - newRect.left,
+    y: rect.top - newRect.top,
+    ease: Power3.easeOut,
+  });
+}

@@ -39,31 +39,33 @@ nav.find("#desktop-nav ul li a").on("click", function () {
 
 // Responsive navbar
 
-(function ($) {
-  $(function () {
-    //  open and close nav
-    $("#navbar-toggle, .nav_bar ul li a").click(function () {
-      $(".nav_bar ul").slideToggle();
-    });
+$(function () {
+  //  open and close nav
+  $("#navbar-toggle").click(function (event) {
+    $(".nav_bar ul").slideToggle(500);
+    event.preventDefault();
 
-    $(".nav_bar ul li a").click(function () {
-      $(".nav_bar ul").hide();
-    });
-
-    // Hamburger toggle
-    $("#navbar-toggle").on("click", function () {
-      this.classList.toggle("active");
-    });
-
-    $(".nav_bar ul li a").click(function () {
-      $("#navbar-toggle").removeClass("active");
+    $(".nav_bar ul li a").click(function (event) {
+      if ($(window).width() < 1023) {
+        $(".nav_bar ul").slideUp(500);
+        event.preventDefault();
+      }
     });
   });
-})(jQuery);
+
+  // Hamburger toggle
+  $("#navbar-toggle").on("click", function (event) {
+    this.classList.toggle("active");
+  });
+
+  $(".nav_bar ul li a").on("click", function (event) {
+    $("#navbar-toggle").removeClass("active");
+  });
+});
 
 // task 5 Rectangle Animation
 
-$(".small_rectangles").click(function (e) {
-  e.preventDefault();
-  $(this).addClass("active").siblings().removeClass("active");
-});
+// $(".small_rectangles").click(function (e) {
+//   e.preventDefault();
+//   $(this).addClass("active").siblings().removeClass("active");
+// });
